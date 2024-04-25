@@ -40,7 +40,7 @@ ORDER BY preco DESC;
 
 -- 11. Listar Produtos com Quantidade de Estoque Par -Escreva uma consulta para selecionar o nome e quantidade_estoque dos produtos cuja quantidade em estoque é um número par.
 SELECT nome, quantidade_estoque FROM produtos 
-WHERE quantidade_estoque LIKE '%0' or quantidade_estoque LIKE '%2' or quantidade_estoque LIKE '%4' or quantidade_estoque LIKE '%6' or quantidade_estoque LIKE '%8'  ;
+WHERE quantidade_estoque%2=0;
 
 /*12. Selecionar Nome e Descrição de Produtos com Preço Inferior a 100 e em Estoque
 Escreva uma consulta para selecionar o nome e descricao dos produtos que têm preço inferior a 100 e uma quantidade em estoque superior a 0.*/
